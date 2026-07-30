@@ -1,7 +1,26 @@
 aid: lower
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lower.png
 name: Lower
-description: 'Lower is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: services. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Lower is a U.S. direct-to-consumer mortgage lender and servicer (Lower, LLC,
+  NMLS #1124061) offering home purchase loans, refinancing, and home equity products
+  including conventional, FHA, VA, jumbo, and adjustable-rate mortgages, HELOCs, and
+  cash-out options. Lower operates a mobile-first application experience with dedicated
+  loan officers and conducts business in 47 states plus the District of Columbia. It was
+  surfaced as a portfolio company of Accel and added to the API Evangelist network. Lower
+  publishes no public developer portal, API documentation, or machine-readable API
+  surface at this time; this profile captures its public web, legal, and domain-security
+  posture.'
 url: https://raw.githubusercontent.com/api-evangelist/lower/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Services
+- Mortgage
+- Lending
+- Home Loans
+- Refinance
+- Home Equity
+- Real Estate
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lower-domain-security.yml
 - type: Website
   url: https://www.lower.com/
+- type: Blog
+  url: https://www.lower.com/blog
+- type: Support
+  url: https://www.lower.com/faqs
+- type: Login
+  url: https://home.lower.com/login
+- type: TermsOfService
+  url: https://www.lower.com/legal/website-terms-of-use
+- type: PrivacyPolicy
+  url: https://www.lower.com/legal/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
